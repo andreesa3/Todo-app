@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #4b575ca3;
+  font-family: Montserrat, Poppins, sans-serif;
+  color: #4b575c;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+input {
+  width: 300px;
+  padding: 10px 5px !important;
+}
+/* Container */
+.container {
+  text-align: center;
+  height: auto;
+  padding: 50px 0;
+}
+
+/* Todo List */
+.list-box {
+  width: 500px;
+  min-height: 570px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 1px 5px #000;
+  padding: 40px 0;
+}
+
+/* Form */
+.form {
+  padding-bottom: 30px;
+}
+.form input,
+.todo input,
+.form button {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  background: #fff;
+  outline: none;
+  font-family: Montserrat, Poppins, sans-serif;
+}
+.form button {
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form button:hover {
+  background: #4b575c;
+  color: #fff;
+}
+
+/* Todo List */
+.todo-list {
+  display: flex;
+  justify-content: center;
+}
+
+/* Todo */
+.todo {
+  width: 100%;
+  background: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+/* Todo Buttons */
+.trash-btn,
+.check-btn,
+.edit-btn {
+  background-color: #fff;
+  color: #4b575c;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.check-btn:hover,
+.edit-btn:hover,
+.trash-btn:hover {
+  color: #fff;
+  background: rgb(75, 87, 92);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+/* Todo Completato */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Decoration */
+.form input,
+.todo,
+.form button {
+  border-bottom: 1px solid #4b575c;
+}
+
+/* Media Query */
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 38px;
+  }
+  input {
+    width: 250px;
+  }
+  .list-box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 415px) {
+  h1 {
+    font-size: 34px;
+  }
+  input {
+    width: 180px;
+    font-size: 14px !important;
+  }
+  button {
+    padding: 9px 10px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 32px;
+  }
+  input {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  h1 {
+    font-size: 28px;
+  }
+  input {
+    width: 120px !important;
+  }
+}
